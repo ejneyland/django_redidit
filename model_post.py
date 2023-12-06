@@ -1,5 +1,5 @@
 from datetime import datetime
-from user import User
+from model_user import User
 
 
 class Post:

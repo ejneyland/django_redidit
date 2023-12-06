@@ -1,4 +1,4 @@
-# REDIDIT, reddit .. redid
+# REDIDIT, reddit .. we redid it
 Reddit-esque thread/comment posting platform
 
 Joint project: Ethan & Christian

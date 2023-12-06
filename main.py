@@ -1,5 +1,5 @@
-from user import User
-from post import Post
+from model_user import User
+from model_post import Post
 
 # a list of posts initialised
 posts = []

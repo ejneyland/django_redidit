@@ -9,13 +9,16 @@ class Post:
     def __init__(self, author: "User", title, body):
         self.post_id = Post.next_post_id
         Post.next_post_id += 1
-        self.date_pub = datetime.now()
+        # DATE string-format-time,  DD/MM/YYYY HH:MM:SS
+        self.date_pub = datetime.now().strftime("%d/%m/%Y  %H:%M:%S")
         self.author = author
         self.title = title
         self.body = body
 
     def __str__(self):
-        return f"""post id: {self.post_id}
-date/time: {self.date_pub}
-\n{self.author.user_name}:  {self.title}
-\n{self.body}\n"""
+        return f""" ------------------------------------   
+|     title:  {self.title}  (#{self.post_id})
+| published:  {self.date_pub}
+|    author:  {self.author.user_name}
+|\n| {self.body}
+ ------------------------------------\n"""
